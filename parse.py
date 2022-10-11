@@ -115,13 +115,16 @@ def parse_html(path):
 
         """
         # 提取所有文本, 每个tag是一行
-        for i in soup.body.find_all(True):
+        for i in soup.body:
             print i.get_text()
         """
         dstfilename = "%s.md" % title
         dstfile = open(dstfilename, "w+")
         print "Parse HTML", path, "->", "%s.md"%title
-        dstfile.write(h2t.handle(html))
+
+        for i in soup.body:
+            dstfile.write(i.get_text())
+            dstfile.write("\n")
 
         dstfile.close()
     except Exception as e:
