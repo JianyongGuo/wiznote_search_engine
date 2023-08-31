@@ -1,8 +1,5 @@
 ### 2019-11-07
 
-### Demo
-![image](https://github.com/coolmissmile/wiznote_search_engine/blob/master/wiz_demo.png)
-
 
 ### 为知笔记-搜索引擎
 ```
@@ -10,6 +7,11 @@
 可以实时解析笔记本本机的为知笔记数据, 搜索速度比原始wiz笔记快很多
 ```
 
+
+### Demo
+![image](https://github.com/coolmissmile/wiznote_search_engine/blob/master/wiz_demo.png)
+
+### 关键特性
 ```
 这套搜索引擎的基本特性是:
 [1] 目前仅支持 Mac 平台, 主要用 shell + python实现
